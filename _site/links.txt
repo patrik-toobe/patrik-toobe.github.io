@@ -1,0 +1,2 @@
+https://kramdown.gettalong.org/syntax.html
+https://jekyllrb.com/docs/
