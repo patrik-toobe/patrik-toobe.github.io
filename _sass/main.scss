@@ -1,3 +1,16 @@
 .current {
     color: green;
 }
+
+body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: min-content 1fr min-content;
+    gap: 1em;
+    margin: 0px;
+}
+
+body>* {
+    width: 45em;
+}

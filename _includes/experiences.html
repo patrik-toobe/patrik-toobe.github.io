@@ -1,0 +1,20 @@
+<h2>Experiences</h2>
+{% for experience in site.experiences %}
+<div>
+    <h3>{{ experience.company }}</h3>
+    Start date: {{ experience.date_start }}
+    End date: {{ experience.date_end }}
+    Position: {{ experience.position }}
+    Description: {{ experience.description }}
+
+    {% if experience.tags %}
+    <ul>
+    {% for tag in experience.tags %}
+        <li>{{ tag }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+    {{ experience.content | markdownify }}
+</div>
+{% endfor %}

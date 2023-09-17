@@ -1,6 +1,6 @@
 collections:
-  authors:
-    output: true
+  experiences:
+    sort_by: -date_start
 
 defaults:
   - scope:
